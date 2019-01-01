@@ -62,7 +62,15 @@
               password: _this.loginForm.password
             })
             .then(response => {
-              console.log('接收后端响应的数据')
+              if(response.data.length) {
+                console.log('接收后端响应的数据', response.data[0].username)
+                _this.$message({
+                  message: '恭喜你，登录成功！',
+                  type: 'success'
+                })
+              }else {
+                _this.$message.error('请检查用户名或密码')
+              }
             })
 
           } else {
@@ -104,5 +112,9 @@
     font-size: 22px;
     color: #333;
     padding: 0 0 35px 25px;
+  }
+
+  .el-message {
+    top: 15%;
   }
 </style>

@@ -64,10 +64,17 @@
             .then(response => {
               if(response.data.length) {
                 console.log('接收后端响应的数据', response.data[0].username)
+                
+                // 把当前用户数据存入 state
+                _this.$store.commit('SAVE_USERINFO', response.data[0])
+
                 _this.$message({
                   message: '恭喜你，登录成功！',
                   type: 'success'
                 })
+
+                // 跳转到首页
+                _this.$router.push('/')
               }else {
                 _this.$message.error('请检查用户名或密码')
               }

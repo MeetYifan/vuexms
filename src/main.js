@@ -20,6 +20,11 @@ Vue.use(ElementUI);
 
 Vue.config.productionTip = false
 
+
+// store.dispatch('GET_USERLIST').then(() => {
+//   console.log('用户数据：', store.state.userList)
+// })
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

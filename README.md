@@ -2,20 +2,4 @@
 
 > A Vue.js project
 
-## Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+这是一个基于 vuex 的基本管理系统，主要是为了了解 vuex 中的几个属性。部分服务端代码见[博客](https://www.jianshu.com/p/d445b582eaea)，目前只是个基本的模板，过后我会尝试将其完善成一个功能详尽的资产管理系统。
